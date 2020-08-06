@@ -37,7 +37,7 @@
         <ul>
           <li>
             <span>Software Engineer</span>
-            <small>Apr 2018 - Dec 2018 (Part-time)</small>
+            <small><br>Apr 2018 - Dec 2018 (Part-time)</small>
           </li>
           <li>
             <span>Research Developer</span>
@@ -55,8 +55,8 @@
         </h3>
         <ul>
           <li>
-            <span>Electrical Engineering (Bachelor)</span>
-            <small>Beijing Forestry University Sept 2016 - Jun 2020</small>
+            <span>Bach: Electrical Engineering </span>
+            <small>Beijing Forestry University<br> Sept 2016 - Jun 2020</small>
           </li>
         </ul>
       </div>
@@ -105,7 +105,7 @@ export default {
     grid-template-rows: 1fr 30px 1fr 1fr 1fr;
     grid-template-areas:
       "profile exp"
-      "span skill"
+      "span exp"
       "about skill"
       "contact skill"
       "media pub";
@@ -270,12 +270,53 @@ export default {
     grid-template-areas: "work edu";
     padding: 10px 0 0 20px;
   }
+  .exp h3{
+    margin-left: 10px;
+  }
   .work{
     grid-area: work;
   }
   .edu{
     grid-area: edu;
   }
+  .work ul, .edu ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  .work li, .edu li{
+    position: relative;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .work li:first-of-type:before, .edu li:first-of-type:before{
+    width: 10px;
+    height: 10px;
+    left: -2px;
+  }
+  .work li:before, .edu li:before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 3px solid #3d405b;
+    background: #fcfcfc;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    display: block;
+  }
+  .work li:after, .edu li:after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #3d405b;
+    left: 5px;
+    top: 0;
+  }
+
   .skill{
     grid-area: skill;
   }
