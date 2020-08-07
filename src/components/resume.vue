@@ -22,11 +22,11 @@
     </div>
     <div class="my-media">
       <h3>Media</h3>
-      <a class="media-icon"><i class="fab fa-twitter"></i></a>
-      <a class="media-icon"><i class="fab fa-zhihu"></i></a>
+      <a class="media-icon" href="https://twitter.com/vzxxbacq_fhq"><i class="fab fa-twitter"></i></a>
+      <a class="media-icon" href="https://www.zhihu.com/people/yolo-85-65"><i class="fab fa-zhihu"></i></a>
       <a class="media-icon"><i class="fab fa-stack-overflow"></i></a>
-      <a class="media-icon"><i class="fab fa-github"></i></a>
-      <a class="media-icon"><i class="fab fa-weibo"></i></a>
+      <a class="media-icon" href="https://github.com/vzxxbacq"><i class="fab fa-github"></i></a>
+      <a class="media-icon" href="https://weibo.com/u/6429026093"><i class="fab fa-weibo"></i></a>
       <a class="media-icon"><i class="fab fa-discord"></i></a>
     </div>
     <div class="right">
