@@ -1,7 +1,13 @@
 <template>
   <div id="app">
-    <div class="resume">
-      <resume/>
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column">
+        <div class="resume">
+          <resume/>
+        </div>
+      </div>
+      <div class="column"></div>
     </div>
   </div>
 </template>
@@ -20,10 +26,23 @@ export default {
 
 <style>
 html{
-  background: #eee;
+  background: #eee!important;
 }
+@font-face{
+  font-family: Lato;
+  src: url("assets/typo/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: Lato;
+  src: url("assets/typo/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 #app {
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Lato, Ubuntu, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
